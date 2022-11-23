@@ -1,40 +1,8 @@
-* {
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-ul,
-ol {
-    list-style: none;
-
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-em,
-i,
-address {
-    font-style: normal;
-}
-
-body {
-    line-height: 1;
-    height: 200vh;
-}
-
-/* reset css */
-
 .header {
     position: fixed;
     width: 100%;
-    border-top: 6px double #999;
-    border-bottom: 6px double #999;
+    border-top: 6px double rgb(15, 159, 255);
+    border-bottom: 6px double rgb(15, 159, 255);
     z-index: 999;
     background: #fff;
     ;
@@ -45,11 +13,11 @@ body {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    color: #999;
+    color: rgb(15, 159, 255);
 }
 
 .header .gnb {
-    border-top: 6px double #999;
+    border-top: 6px double rgb(15, 159, 255);
 }
 
 .header .gnb>ul {
@@ -65,11 +33,11 @@ body {
 
     flex: 1;
     line-height: 50px;
-    border-left: 1px solid #999;
+    border-left: 1px solid rgb(15, 159, 255);
 }
 
 .header .gnb>ul>li:last-child {
-    border-right: 1px solid #999;
+    border-right: 1px solid rgb(15, 159, 255);
 }
 
 .header .icon {
@@ -88,7 +56,7 @@ body {
     left: 0;
     width: 100%;
 
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(15, 159, 255, 0.3);
     color: #fff;
 
     opacity: 0;
@@ -107,20 +75,17 @@ body {
 
 /* header */
 
-main section .inner {
+.mainVisual .main {
     position: relative;
-    top: 168px;
-    left: 0;
 
+    background: url(../img/wave.jpg) no-repeat center center/cover;
+    height: 100vh;
+    margin: 0 0 100px 0;
 }
 
-main section .inner img {
-    width: 100%;
-}
-
-main section .inner button {
+.mainVisual .main button {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     width: 160px;
     height: 60px;
@@ -128,9 +93,50 @@ main section .inner button {
     color: #fff;
     border: 2px solid #fff;
     border-radius: 30px;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
 }
 
-main section .inner button>a {
+.mainVisual .main button>a {
     display: block;
+}
+
+/* main */
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.inner {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto 100px;
+}
+
+.inner figure {
+    position: relative;
+    flex: 1 1 30%;
+    overflow: hidden;
+}
+
+.inner figure .box1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    color: rgb(15, 159, 255);
+}
+
+.inner figure .box1:hover {
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
 }
