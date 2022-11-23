@@ -1,8 +1,8 @@
 .header {
     position: fixed;
     width: 100%;
-    border-top: 6px double rgb(15, 159, 255);
-    border-bottom: 6px double rgb(15, 159, 255);
+    border-top: 6px double #999;
+    border-bottom: 6px double #999;
     z-index: 999;
     background: #fff;
     ;
@@ -13,11 +13,11 @@
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    color: rgb(15, 159, 255);
+    color: #999;
 }
 
 .header .gnb {
-    border-top: 6px double rgb(15, 159, 255);
+    border-top: 6px double #999;
 }
 
 .header .gnb>ul {
@@ -33,11 +33,11 @@
 
     flex: 1;
     line-height: 50px;
-    border-left: 1px solid rgb(15, 159, 255);
+    border-left: 1px solid #999;
 }
 
 .header .gnb>ul>li:last-child {
-    border-right: 1px solid rgb(15, 159, 255);
+    border-right: 1px solid #999;
 }
 
 .header .icon {
@@ -56,7 +56,7 @@
     left: 0;
     width: 100%;
 
-    background: rgba(15, 159, 255, 0.3);
+    background: rgba(0, 0, 0, 0.3);
     color: #fff;
 
     opacity: 0;
@@ -133,7 +133,7 @@ img {
     justify-content: center;
     align-items: center;
     font-size: 0;
-    color: rgb(15, 159, 255);
+    color: #999;
 }
 
 .inner figure .box1:hover {
